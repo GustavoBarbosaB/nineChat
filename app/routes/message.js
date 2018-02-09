@@ -9,7 +9,25 @@ module.exports = function(app){
     // });
     //
     // connection.end();
-    response.send(`Teste`);
+    var test = [
+      {
+        message:"Cara isso é um teste!",
+        sender:"gustavo.barbosa",
+        receiver:"arthur.saad"
+      },
+      {
+        message:"Que massa em cara!",
+        sender:"arthur.saad",
+        receiver:"gustavo.barbosa"
+      },
+      {
+        message:"Nossa, nem fala brother!",
+        sender:"gustavo.barbosa",
+        receiver:"arthur.saad"
+      }
+    ]
+
+    response.send(test);
   });
 
   app.post(`/message`,function(request,response){
