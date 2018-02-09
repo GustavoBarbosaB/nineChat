@@ -14,5 +14,8 @@
     "express-load": "^1.1.16",
     "mysql": "^2.15.0",
     "socket.io": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
