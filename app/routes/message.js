@@ -35,4 +35,8 @@ module.exports = function(app){
      io.emit(`newMessage`,post);
      response.send(post);
   });
+
+  app.get(`/`,function(request,response){
+    response.send(`Hello World!`);
+  });
 }
