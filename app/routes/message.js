@@ -1,14 +1,5 @@
 module.exports = function(app){
   app.get(`/message`,function(request,response){
-
-    // var connection = app.infra.connectionFactory();
-    // var produtosDao = new app.infra.LivrosDAO(connection);
-    //
-    // produtosDao.lista(function(error,results){
-    //   response.send(results);
-    // });
-    //
-    // connection.end();
     var test = [
       {
         message:"Cara isso é um teste!",
